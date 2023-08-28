@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="561.0" prefWidth="805.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.miniuber.Controller.PaymentsController">
+   <children>
+      <TableView layoutX="-1.0" layoutY="117.0" prefHeight="442.0" prefWidth="806.0">
+        <columns>
+          <TableColumn prefWidth="240.0" text="Email" />
+          <TableColumn prefWidth="221.60003662109375" text="Destination" />
+            <TableColumn prefWidth="156.79998779296875" text="Type" />
+            <TableColumn prefWidth="187.199951171875" text="Price" />
+        </columns>
+      </TableView>
+      <Label alignment="CENTER_RIGHT" layoutX="271.0" layoutY="12.0" prefHeight="75.0" prefWidth="344.0" text="Payments" textFill="#0b72d9">
+         <font>
+            <Font name="Algerian" size="58.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="52.0" fitWidth="57.0" layoutX="264.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/payment.png" />
+         </image>
+      </ImageView>
+      <Separator layoutY="115.0" prefHeight="0.0" prefWidth="805.0" style="-fx-background-color: Black;" />
+   </children>
+</AnchorPane>
