@@ -28,7 +28,7 @@ public class MainPageController {
         OpenPage(PaymentButton,"Payments.fxml",800,550);
     }
     public void SupportButtonOnAction(ActionEvent event) throws IOException {
-        OpenPage(SupportButton,"Support.fxml",600,430);
+        OpenPage(SupportButton,"Support.fxml",701,545);
     }
     public void UserInfoButtonOnAction(ActionEvent event) throws IOException {
         OpenPage(UserInfoButton,"UserInfo.fxml",600,320);

@@ -18,7 +18,7 @@ public class SwitchController {
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.setTitle("Mini Uber :)");
-        stage.getIcons().add(new Image("C:\\Users\\dell\\IdeaProjects\\Mini-Uber\\src\\main\\resources\\com\\example\\miniuber\\Images\\916bebf0e5ef862246781f2859983d28.jpg"));
+        stage.getIcons().add(new Image("D:\\College's projects\\Mini-Uber\\src\\main\\resources\\com\\example\\miniuber\\Images\\916bebf0e5ef862246781f2859983d28.jpg"));
         stage.show();
     }
     public static void OpenPage(Button event, String FileName,float width,float height) throws IOException {
@@ -28,7 +28,7 @@ public class SwitchController {
         Scene scene = new Scene(fxmlLoader.load(), width, height);
         stage.setScene(scene);
         stage.setTitle("Mini Uber :)");
-        stage.getIcons().add(new Image("C:\\Users\\dell\\IdeaProjects\\Mini-Uber\\src\\main\\resources\\com\\example\\miniuber\\Images\\916bebf0e5ef862246781f2859983d28.jpg"));
+        stage.getIcons().add(new Image("D:\\College's projects\\Mini-Uber\\src\\main\\resources\\com\\example\\miniuber\\Images\\916bebf0e5ef862246781f2859983d28.jpg"));
         stage.show();
     }
 
