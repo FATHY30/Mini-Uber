@@ -9,8 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="513.0" prefWidth="699.0" style="-fx-background-color: #b5b5ac;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.miniuber.Controller.RequestDriverController">
+<AnchorPane prefHeight="513.0" prefWidth="699.0" style="-fx-background-color: #b5b5ac;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.miniuber.Controller.RequestDriverController">
    <children>
       <Label layoutX="14.0" layoutY="68.0" prefHeight="66.0" prefWidth="86.0" text="From">
          <font>
@@ -22,8 +21,6 @@
             <Font name="Algerian" size="37.0" />
          </font>
       </Label>
-      <ComboBox layoutX="143.0" layoutY="89.0" prefHeight="26.0" prefWidth="206.0" />
-      <ComboBox layoutX="463.0" layoutY="88.0" prefHeight="26.0" prefWidth="206.0" />
       <Label layoutX="190.0" layoutY="45.0" text="Choose Destination or Enter distance :)" textFill="#3c7ec2">
          <font>
             <Font name="Arial Bold Italic" size="20.0" />
@@ -92,5 +89,7 @@
             <Image url="@Images/updateAnddeletemember.png" />
          </image>
       </ImageView>
+      <TextField layoutX="462.0" layoutY="89.0" prefHeight="26.0" prefWidth="206.0" />
+      <TextField layoutX="143.0" layoutY="89.0" prefHeight="26.0" prefWidth="206.0" />
    </children>
 </AnchorPane>
