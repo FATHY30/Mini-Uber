@@ -10,15 +10,16 @@ import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.Objects;
 
 public class SwitchController {
     public static void SwitchTo(ActionEvent event,String FileName) throws IOException {
-        Parent root = FXMLLoader.load(SwitchController.class.getResource(FileName));
+        Parent root = FXMLLoader.load(Objects.requireNonNull(SwitchController.class.getResource(FileName)));
         Stage stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.setTitle("Mini Uber :)");
-        stage.getIcons().add(new Image("D:\\College's projects\\Mini-Uber\\src\\main\\resources\\com\\example\\miniuber\\Images\\916bebf0e5ef862246781f2859983d28.jpg"));
+        stage.getIcons().add(new Image("C:\\Users\\dell\\Desktop\\Mini-Uber\\Mini-Uber\\src\\main\\resources\\com\\example\\miniuber\\Images\\916bebf0e5ef862246781f2859983d28.jpg"));
         stage.show();
     }
     public static void OpenPage(Button event, String FileName,float width,float height) throws IOException {
@@ -28,8 +29,7 @@ public class SwitchController {
         Scene scene = new Scene(fxmlLoader.load(), width, height);
         stage.setScene(scene);
         stage.setTitle("Mini Uber :)");
-        stage.getIcons().add(new Image("D:\\College's projects\\Mini-Uber\\src\\main\\resources\\com\\example\\miniuber\\Images\\916bebf0e5ef862246781f2859983d28.jpg"));
+        stage.getIcons().add(new Image("C:\\Users\\dell\\Desktop\\Mini-Uber\\Mini-Uber\\src\\main\\resources\\com\\example\\miniuber\\Images\\916bebf0e5ef862246781f2859983d28.jpg"));
         stage.show();
     }
-
 }

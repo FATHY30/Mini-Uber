@@ -35,7 +35,7 @@ public class SupportController {
         String selectedRequestType = requestTypeChoiceBox.getValue();
         //get the text area
         String description = descriptionTextArea.getText();
-        ImageView imageView= new ImageView("D:\\College's projects\\Mini-Uber\\src\\main\\resources\\com\\example\\miniuber\\Images\\support-ticket.jpg");
+        ImageView imageView= new ImageView("C:\\Users\\dell\\Desktop\\Mini-Uber\\Mini-Uber\\src\\main\\resources\\com\\example\\miniuber\\Images\\support-ticket.jpg");
         imageView.setFitWidth(100);
         imageView.setFitHeight(100);
 

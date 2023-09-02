@@ -12,7 +12,7 @@ public class HelloApplication extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 600, 400);
         stage.setTitle("Mini Uber :)");
-        stage.getIcons().add(new Image("D:\\College's projects\\Mini-Uber\\src\\main\\resources\\com\\example\\miniuber\\Images\\916bebf0e5ef862246781f2859983d28.jpg"));
+        stage.getIcons().add(new Image("C:\\Users\\dell\\Desktop\\Mini-Uber\\Mini-Uber\\src\\main\\resources\\com\\example\\miniuber\\Images\\916bebf0e5ef862246781f2859983d28.jpg"));
         stage.setScene(scene);
         stage.show();
     }

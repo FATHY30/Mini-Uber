@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="513.0" prefWidth="699.0" style="-fx-background-color: #b5b5ac;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.miniuber.Controller.RequestDriverController">
+<AnchorPane prefHeight="513.0" prefWidth="699.0" style="-fx-background-color: #b5b5ac;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.miniuber.Controller.RequestDriverController">
    <children>
       <Label layoutX="14.0" layoutY="68.0" prefHeight="66.0" prefWidth="86.0" text="From">
          <font>
@@ -31,34 +31,22 @@
             <Font name="Algerian" size="24.0" />
          </font>
       </Label>
-      <TextField layoutX="143.0" layoutY="156.0" prefHeight="26.0" prefWidth="206.0" style="-fx-background-color: #dcd8d8;" />
       <Label layoutX="14.0" layoutY="200.0" prefHeight="66.0" prefWidth="86.0" text="Type">
          <font>
             <Font name="Algerian" size="32.0" />
          </font>
       </Label>
-      <ComboBox layoutX="143.0" layoutY="220.0" prefHeight="26.0" prefWidth="206.0" />
+      <ComboBox fx:id="type" layoutX="143.0" layoutY="220.0" prefHeight="26.0" prefWidth="206.0" style="-fx-cursor: hand;" />
       <Label layoutX="14.0" layoutY="266.0" prefHeight="66.0" prefWidth="111.0" text="Price">
          <font>
             <Font name="Algerian" size="32.0" />
          </font>
       </Label>
-      <Label layoutX="143.0" layoutY="286.0" prefHeight="26.0" prefWidth="206.0" style="-fx-background-color: #dcd8d8;" textFill="#1ba0e3">
+      <Label fx:id="price" layoutX="143.0" layoutY="286.0" prefHeight="26.0" prefWidth="206.0" style="-fx-background-color: #dcd8d8;" textFill="#1ba0e3">
          <font>
             <Font name="Arial Bold" size="21.0" />
          </font>
       </Label>
-      <Label layoutX="8.0" layoutY="332.0" prefHeight="66.0" prefWidth="144.0" text="Payment Type">
-         <font>
-            <Font name="Algerian" size="18.0" />
-         </font>
-      </Label>
-      <ImageView fitHeight="47.0" fitWidth="50.0" layoutX="143.0" layoutY="437.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@Images/floppy-disk.png" />
-         </image>
-      </ImageView>
-      <ComboBox layoutX="143.0" layoutY="352.0" prefHeight="26.0" prefWidth="206.0" />
       <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="242.0" layoutY="14.0" prefHeight="23.0" prefWidth="194.0" text="New Request" textFill="#3c7ec2">
          <font>
             <Font name="Arial Bold Italic" size="20.0" />
@@ -69,27 +57,37 @@
             <Image url="@Images/icons8-car-100.png" />
          </image>
       </ImageView>
-      <Button alignment="CENTER_RIGHT" layoutX="143.0" layoutY="437.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="140.0" style="-fx-background-color: #00a0de; -fx-cursor: hand;" text="Save" textFill="#e1e1e1">
+      <Button fx:id="Pay" alignment="CENTER_RIGHT" layoutX="138.0" layoutY="390.0" mnemonicParsing="false" onAction="#PayOnAction" prefHeight="46.0" prefWidth="140.0" style="-fx-background-color: #00a0de; -fx-cursor: hand;" text="Pay" textFill="#e1e1e1">
          <font>
             <Font name="Arial Black" size="22.0" />
          </font>
       </Button>
-      <ImageView fitHeight="46.0" fitWidth="47.0" layoutX="143.0" layoutY="437.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="46.0" fitWidth="47.0" layoutX="138.0" layoutY="390.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Images/floppy-disk.png" />
          </image>
       </ImageView>
-      <Button alignment="CENTER_RIGHT" layoutX="349.0" layoutY="437.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="140.0" style="-fx-background-color: #00a0de; -fx-cursor: hand;" text="Reset" textFill="#e1e1e1">
+      <Button alignment="CENTER_RIGHT" layoutX="349.0" layoutY="390.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="140.0" style="-fx-background-color: #00a0de; -fx-cursor: hand;" text="Reset" textFill="#e1e1e1">
          <font>
             <Font name="Arial Black" size="22.0" />
          </font>
       </Button>
-      <ImageView fitHeight="47.0" fitWidth="47.0" layoutX="349.0" layoutY="437.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="47.0" fitWidth="47.0" layoutX="349.0" layoutY="390.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Images/updateAnddeletemember.png" />
          </image>
       </ImageView>
-      <TextField layoutX="462.0" layoutY="89.0" prefHeight="26.0" prefWidth="206.0" />
-      <TextField layoutX="143.0" layoutY="89.0" prefHeight="26.0" prefWidth="206.0" />
+      <Label fx:id="distance2" layoutX="143.0" layoutY="156.0" prefHeight="26.0" prefWidth="206.0" style="-fx-background-color: #dcd8d8;" textFill="#1ba0e3">
+         <font>
+            <Font name="Arial Bold" size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="FromLabel" layoutX="143.0" layoutY="89.0" prefHeight="26.0" prefWidth="206.0" />
+      <TextField fx:id="ToLabel" layoutX="462.0" layoutY="88.0" prefHeight="26.0" prefWidth="206.0" />
+      <Button alignment="CENTER_RIGHT" layoutX="489.0" layoutY="133.0" mnemonicParsing="false" onAction="#submit" prefHeight="46.0" prefWidth="140.0" style="-fx-background-color: #00a0de; -fx-cursor: hand;" text="Done     " textFill="#e1e1e1">
+         <font>
+            <Font name="Arial Black" size="22.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

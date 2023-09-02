@@ -16,11 +16,11 @@
             <Image url="@Images/ef5d9cc5b4d8f8411d32816e936a6c05.jpg" />
          </image>
       </ImageView>
-      <PasswordField layoutX="25.0" layoutY="179.0" prefHeight="26.0" prefWidth="223.0" promptText="Phone Number" />
-      <TextField layoutX="24.0" layoutY="82.0" prefHeight="26.0" prefWidth="223.0" promptText="Username" />
-      <TextField layoutX="25.0" layoutY="132.0" prefHeight="26.0" prefWidth="223.0" promptText="Password" />
-      <TextField layoutX="25.0" layoutY="35.0" prefHeight="26.0" prefWidth="223.0" promptText="Email Address" />
-      <Button layoutX="24.0" layoutY="236.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="114.0" style="-fx-background-color: #188bb1; -fx-cursor: hand;" text="Sign Up" textFill="#1f2628">
+      <PasswordField fx:id="passwordField" layoutX="26.0" layoutY="135.0" prefHeight="26.0" prefWidth="223.0" promptText="Password" />
+      <TextField fx:id="usernameField" layoutX="24.0" layoutY="82.0" prefHeight="26.0" prefWidth="223.0" promptText="Username" />
+      <TextField fx:id="phoneNumberField" layoutX="26.0" layoutY="187.0" prefHeight="26.0" prefWidth="223.0" promptText="Phone number" />
+      <TextField fx:id="emailAddressField" layoutX="25.0" layoutY="35.0" prefHeight="26.0" prefWidth="223.0" promptText="Email Address" />
+      <Button fx:id="SignUp" layoutX="24.0" layoutY="236.0" mnemonicParsing="false" onAction="#SignUpOnAction" prefHeight="31.0" prefWidth="114.0" style="-fx-background-color: #188bb1; -fx-cursor: hand;" text="Sign Up" textFill="#1f2628">
          <font>
             <Font name="Arial Bold" size="16.0" />
          </font>

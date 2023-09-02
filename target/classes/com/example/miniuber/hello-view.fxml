@@ -14,18 +14,23 @@
    <children>
       <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="451.0" prefWidth="735.0">
          <children>
-            <ImageView fitHeight="431.0" fitWidth="645.0" focusTraversable="true" layoutX="68.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="431.0" fitWidth="645.0" focusTraversable="true" layoutX="35.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@Images/ef5d9cc5b4d8f8411d32816e936a6c05%20(1).jpg" />
                </image>
             </ImageView>
-            <TextField layoutX="420.0" layoutY="167.0" prefHeight="32.0" prefWidth="215.0" promptText="Username " />
-            <PasswordField layoutX="420.0" layoutY="219.0" prefHeight="32.0" prefWidth="215.0" promptText="Password" />
+            <TextField fx:id="Username" layoutX="420.0" layoutY="167.0" onAction="#messageController" prefHeight="32.0" prefWidth="215.0" promptText="Username " />
+            <PasswordField fx:id="Password" layoutX="420.0" layoutY="219.0" onAction="#messageController" prefHeight="32.0" prefWidth="215.0" promptText="Password" />
             <Button id="Login" fx:id="LoginButton" layoutX="420.0" layoutY="268.0" mnemonicParsing="false" onAction="#SwitchToMain" prefHeight="26.0" prefWidth="86.0" style="-fx-background-color: Orange; -fx-cursor: hand; -fx-border-radius: 30;" text="Login" textFill="#1b140a" />
             <Button id="SignUp" fx:id="SignUpButton" layoutX="572.0" layoutY="332.0" mnemonicParsing="false" onAction="#SwitchToSignUp" prefHeight="26.0" prefWidth="86.0" style="-fx-background-color: Purple; -fx-cursor: hand;" text="Sign Up" textFill="#fcf4e8" />
             <Label layoutX="420.0" layoutY="322.0" prefHeight="46.0" prefWidth="152.0" text="Don't have an account ?" textFill="#204c7b">
                <font>
                   <Font name="Agency FB Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="invalidInput" alignment="CENTER_RIGHT" layoutX="348.0" layoutY="113.0" prefHeight="35.0" prefWidth="296.0" textFill="#e70909">
+               <font>
+                  <Font name="Arial" size="18.0" />
                </font>
             </Label>
          </children>

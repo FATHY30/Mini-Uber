@@ -1,32 +1,33 @@
 package com.example.miniuber.calculator;
 import java.util.Random;
 public class CalculateXYCoordinate {
-    private int FromX;
-    private int ToX;
-    private int FromY;
+    private int fromX;
+    private int toX;
+    private int fromY;
 
     private int ToY;
-
+    public static String From5;
+    public static String To5;
     public  CalculateXYCoordinate()
     {
         Random random=new Random();
-        FromX=random.nextInt()%40;
-        FromY=random.nextInt()%40;
+        fromX =random.nextInt()%40;
+        fromY =random.nextInt()%40;
         ToY=random.nextInt()%40;
-        ToX=random.nextInt()%40;
+        toX =random.nextInt()%40;
 
     }
 
     public int getFromY() {
-        return FromY;
+        return fromY;
     }
 
     public int getFromX() {
-        return FromX;
+        return fromX;
     }
 
     public int getToX() {
-        return ToX;
+        return toX;
     }
 
     public int getToY() {
